@@ -17,11 +17,11 @@ const isArray = collection => {
   return typeof length === 'number' && length >= 0 && length <= MAX_ARRAY_INDEX;
 };
 
-const getLength = shallowProperty('length');
-
 const shallowProperty = key => {
   return obj => obj == null ? void 0 : obj[key];
 };
+
+const getLength = shallowProperty('length');
 
 const keys = obj => {
   if (!isObect(obj)) return [];
@@ -35,6 +35,7 @@ const isObect = obj => {
 
 module.exports = {
   isArray,
-  keys
+  keys,
+  getLength
 }
 
