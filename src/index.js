@@ -197,26 +197,3 @@ _utils.matcher = attrs => {
 };
 
 _utils.where = (obj, attrs) => _utils.filter(obj, _utils.matcher(attrs)); 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
